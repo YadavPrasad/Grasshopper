@@ -15,17 +15,21 @@ client/.vite/
 client/coverage/
 client/*.tsbuildinfo
 
+
 server/__pycache__/
+server/**/*.pyc
+server/**/*.pyo
+server/**/*.pyd
+server/**/__pycache__/
 server/venv/
 server/logs/
-server/*.pyc
-server/*.pyo
-server/*.pyd
 server/*.egg-info/
 server/.pytest_cache/
 server/.mypy_cache/
+server/*.pyc
+!server/**/__init__.py
 
-build/
+]build/
 develop-eggs/
 dist/
 .eggs/
