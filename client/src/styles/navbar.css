@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #726245;
+    padding: 10px 20px; 
+    height: 40px;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;              
+    color: white;                   
+    font-size: 1.2rem;              
+}
+
+.title-text-style {    
+    padding-right : 70px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;              
+    color: white;
+    font-size: 1.9rem;  
+}
