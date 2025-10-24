@@ -22,7 +22,7 @@ function QuizForm() {
     setIsLoading(true);
     
     try {
-      const response = await axios.post("http://localhost:8000/generate-quiz", {
+      const response = await axios.post("https://grasshopper-tb1c.onrender.com/generate-quiz", {
         topic,
         difficulty,
         num_questions: numQuestions,
