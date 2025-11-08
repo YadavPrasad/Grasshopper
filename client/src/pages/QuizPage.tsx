@@ -40,24 +40,22 @@ function QuizPage() {
     const newAnswers = [...answers, selected];
     setAnswers(newAnswers);
     
-    if (isCorrect) {
-      setScore(score + 1);
-    }
+    const newScore = isCorrect ? score + 1 : score;
+    setScore(newScore);
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex(currentIndex + 1);
     } else {
       console.log("Quiz complete:", newAnswers);
       window.removeEventListener("popstate", () => {});
-      navigate("/");
-      // navigate("/result", { 
-      //   state: { 
-      //     answers: newAnswers, 
-      //     questions,
-      //     score: isCorrect ? score + 1 : score 
-      //   },
-      //   replace: true
-      // });
+      navigate("/results", {
+        state: {
+          score: newScore,
+          totalQuestions: questions.length,
+          answers: newAnswers,
+          questions: questions
+        }
+      });
     }
   };
 

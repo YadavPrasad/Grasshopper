@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    background-color: #726245;
+    background-color: #e8e8e8;
     padding: 10px 20px; 
     height: 40px;
+    border-bottom: 3px solid #1a1a1a;
 }
 
 .navbar div {
@@ -16,14 +17,14 @@
 .logo-title {
     font-family: 'Poppins', sans-serif; 
     font-weight: bold;              
-    color: white;                   
+    color: #1a1a1a;                   
     font-size: 1.2rem;              
 }
 
 .title-text-style {    
-    padding-right : 70px;
+    padding-right: 70px;
     font-family: 'Poppins', sans-serif; 
     font-weight: bold;              
-    color: white;
+    color: #1a1a1a;
     font-size: 1.9rem;  
 }

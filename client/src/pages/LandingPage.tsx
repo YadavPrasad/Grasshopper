@@ -1,17 +1,23 @@
-import Navbar from '../components/Navbar'
+import Background from '../assets/Background.png';
+import Navbar from '../components/Navbar';
 
 function LandingPage() {
   return (
     <div
       style={{
-        backgroundImage: "url('/src/assets/Background.png')",
+        backgroundImage: `url(${Background})`,
         height: '100vh',
-        width : '100vw',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        width: '100vw',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'contain',
+        backgroundColor: '#e8e8e8',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
-    <Navbar />
+      <Navbar />
     </div>
   );
 }
